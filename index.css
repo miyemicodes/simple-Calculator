@@ -1,0 +1,79 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: hsl(0, 0%, 61%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calculator {
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 1px 4px 2px hsla(0, 0%, 0%, 0.577);
+    border-radius: 15px;
+    background:hsl(0, 0%, 40%);
+    overflow: hidden;
+}
+
+form input{
+    height: 120px;
+    width: 100%;
+    background: hsl(0, 0%, 80%);
+    color:hsl(0, 0%, 0%) ;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding:1rem;
+    text-align: right;
+    pointer-events: none;
+}
+
+.btn{
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid transparent;
+    width:60px;
+    height:50px;
+    font-size:23px;
+    font-weight: 600;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.btn-orange{
+   background: hsl(36, 34%, 53%);
+   color: hsl(0, 43%, 99%);
+}
+
+.btn-grey{
+    background:hsl(0, 2%, 70%);
+    color: hsl(0, 43%, 99%);
+}
+
+.btn-equal{
+    background:hsl(0, 1%, 28%);
+    color: hsl(0, 43%, 99%);
+}
+
+.btn-clear{
+    background:hsl(0, 11%, 5%);
+    color: hsl(0, 43%, 99%);
+
+}
