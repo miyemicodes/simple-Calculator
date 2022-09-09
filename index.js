@@ -6,14 +6,14 @@
 
   buttons.forEach(function (button) {
     button.addEventListener('click', function (e) {
-      // check if button class is equal to
+      // check if button class is equal to [done]
       if (e.target.classList.contains('btn-equal')) {
         console.log('oh its equal');
-        // continue elizabeth process
+        // continue elizabeth calculator process
         if (screen.value === '') {
           screen.value = 'enter value';
         } else {
-          let answer = eval('screen.value');
+          let answer = eval(screen.value);
           screen.value = answer;
           console.log(screen.value);
         }
